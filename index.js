@@ -46,80 +46,80 @@ async function askName() {
     const answers = await inquirer.prompt({
       name: 'Question-1',
       type: 'list',
-      message: 'What is my favorite color?\n',
+      message: 'What is my favorite animal?\n',
       choices: [
-        'Red',
-        'Blue',
-        'Green',
-        'Yellow ',
+        'Dog',
+        'Cat',
+        'Horse',
+        'Fish ',
       ],
     });
   
-    return handleAnswer(answers.question_1 === 'Blue');
+    return handleAnswer(answers.question_1 === 'Cat');
   }
 
   async function question2() {
     const answers = await inquirer.prompt({
       name: 'Question-2',
       type: 'list',
-      message: 'What is my favorite game?\n',
+      message: 'What is my favorite food?\n',
       choices: [
-        'Destiny2',
-        'ARK',
-        'LOL',
-        'StarCitizen ',
+        'Pizza',
+        'Burger',
+        'Boneless',
+        'Sandwich ',
       ],
     });
   
-    return handleAnswer(answers.question_1 === 'ARK');
+    return handleAnswer(answers.question_1 === 'Burger');
   }
 
   async function question3() {
     const answers = await inquirer.prompt({
       name: 'Question-3',
       type: 'list',
-      message: 'What do I like the most?\n',
+      message: 'What do I like the least?\n',
       choices: [
-        'Cars',
-        'Computers',
-        'Animals',
-        'Science ',
+        'School',
+        'Work',
+        'Money',
+        'Sports ',
       ],
     });
   
-    return handleAnswer(answers.question_1 === 'Cars');
+    return handleAnswer(answers.question_1 === 'School');
   }
 
   async function question4() {
     const answers = await inquirer.prompt({
       name: 'Question-4',
       type: 'list',
-      message: 'How much did my PC cost me?\n',
+      message: 'How old am I?\n',
       choices: [
-        '12k',
-        '17k',
-        '15k',
-        '10k ',
+        '22',
+        '18',
+        '24',
+        '21 ',
       ],
     });
   
-    return handleAnswer(answers.question_1 === '15k');
+    return handleAnswer(answers.question_1 === '21');
   }
 
   async function question5() {
     const answers = await inquirer.prompt({
       name: 'Question-5',
       type: 'list',
-      message: 'Am I going to pass this exam?\n',
+      message: 'Am I going to complete my career?\n',
       choices: [
         'Absolutely',
+        'Of course',
         'Maybe',
-        'Maybe not',
-        'No chance ',
+        'Please try',
       ],
     });
   
-    return handleAnswer(answers.question_1 === 'Maybe');
+    return handleAnswer(answers.question_1 === 'Absolutely');
   }
 
 
